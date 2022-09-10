@@ -179,6 +179,24 @@ files:
 
     Hello
   learner_created: false
+- name: src/asciimirror/example1.txt
+  visible: true
+  learner_created: true
+- name: src/asciimirror/example2.txt
+  visible: true
+  learner_created: true
+- name: src/asciimirror/example5.txt
+  visible: true
+  learner_created: true
+- name: src/asciimirror/example4.txt
+  visible: true
+  learner_created: true
+- name: src/asciimirror/example3.txt
+  visible: true
+  learner_created: true
 feedback_link: https://hyperskill.org/projects/260/stages/1318/implement#comment
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Sat, 10 Sep 2022 09:31:27 UTC
 record: -1
