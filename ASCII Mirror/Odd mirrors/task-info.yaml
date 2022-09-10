@@ -285,8 +285,19 @@ files:
     Hello
   learner_created: true
 feedback_link: https://hyperskill.org/projects/260/stages/1319/implement#comment
-status: Solved
+status: Failed
 feedback:
-  message: Congratulations!
-  time: Sat, 10 Sep 2022 12:06:05 UTC
-record: -1
+  message: "Wrong answer in test #1\n\nWhen the user inputs a file, that can be correctly\
+    \ opened - each line in output should match the following pattern: &quot;{modified\
+    \ line} | {modified line}&quot;\n\nPlease find below the output of your program\
+    \ during this failed test.\nNote that the &#39;&gt;&#39; character indicates the\
+    \ beginning of the input line.\n\n---\n\nInput the file path:\n&gt; ./test/example1.txt\n\
+    \                    _______  |  _______                    \n               \
+    \    &lt; hello &gt; | &lt; olleh &gt;                   \n                  \
+    \  -------  |  -------                    \n            ^__^   /         |   \
+    \      \\   ^__^            \n    _______/(oo)  /          |          \\  (oo)\\\
+    _______    \n/\\/(       /(__)             |             (__)\\       )\\/\\\n\
+    \   | w----||                 |                 ||----w |   \n   ||     ||   \
+    \              |                 ||     ||"
+  time: Sat, 10 Sep 2022 12:30:54 UTC
+record: 4

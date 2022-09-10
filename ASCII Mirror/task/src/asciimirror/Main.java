@@ -29,9 +29,34 @@ public class Main {
         }
 
         for (String str : list) {
-            str = enlargeString(str, maxLength);
-            System.out.println(str + " | " + str);
+            String modifiedStr = enlargeString(str, maxLength);
+            String reversedStr = reverseString(modifiedStr);
+            System.out.println(modifiedStr + " | " + reversedStr);
         }
+    }
+
+    private static String reverseString(String str) {
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < str.length(); i++) {
+            char ch = str.charAt(i);
+            char newCh = switch (ch) {
+                case '<' -> '>';
+                case '>' -> '<';
+                case '[' -> ']';
+                case ']' -> '[';
+                case '{' -> '}';
+                case '}' -> '{';
+                case '(' -> ')';
+                case ')' -> '(';
+                case '/' -> '\\';
+                case '\\' -> '/';
+                default -> ch;
+            };
+            sb.append(newCh);
+        }
+        sb.reverse();
+
+        return sb.toString();
     }
 
     public static String enlargeString(String str, int length) {
